@@ -1,0 +1,22 @@
+{
+  "name": "prisma-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "prisma": {
+    "schema": "schema.prisma"
+  },
+  "scripts": {
+    "migrate": "prisma migrate deploy --preview-feature && yarn generate",
+    "migrate:dev": "prisma migrate dev --preview-feature",
+    "generate": "prisma generate",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "prisma": "^3.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.5.0"
+  }
+}
